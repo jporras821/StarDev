@@ -1,0 +1,180 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+	display: inline-block;
+    overflow: hidden;
+    background-color: #0080FF; 
+}
+
+
+li {
+    float: left;
+	border-right:1px solid #000000;
+}
+
+li:last-child {
+    border-right:1px solid #000000;
+}
+
+li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+ 
+.active {
+    background-color: #C26400;
+}
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+}
+
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+  li.dropdownAdmin {
+    display: inline-block;
+  }
+
+  .dropdown-contentAdmin {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .dropdown-contentAdmin a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-contentAdmin a:hover {background-color: #f1f1f1}
+
+  .dropdownAdmin:hover .dropdown-contentAdmin {
+    display: block;
+}
+</style>
+
+  <title>Project Info</title>
+ <body text="#000011" bgcolor="#ffffff" link="#0000f0" vlink="#0000f0" alink="#0000f0">
+
+  <div>
+    <center><table style="padding: 10px; background: white; border-collapse: collapse;">
+      <tr>
+        <td padding="100px" align="middle" align="center" width ="93%">
+          <img hspace="0" align="center"vspace="0" border="0" height="112" width="653" usemap="#banner" alt="El Paso MPO" src="el-paso-mpo.png" />
+        </td></center>
+          <table >
+            <tr>
+              <td>
+                <a  href="../EPMPO/LogIn.html">
+                  <button>LOG-IN</button>
+                </a>
+                <a href="../EPMPO/Register.html">
+                  <button>Register</button>
+                </a>            
+              </td>
+            </tr>   
+          </table>
+
+      </tr>
+      <td padding="0" bgcolor="#ff6633" colspan="3" height="5">
+      </td>
+
+      
+      
+    </table>
+  </div>
+
+
+
+<p><h1>El Paso Metropolitan Planning Organization</h1></p>
+
+
+<center><ul>
+  <li><a href="../EPMPO/Home.html">Home</a></li>
+  <li class="dropdown">
+	<a class="dropbtn">Projects</a>
+    <div class="dropdown-content">
+      <a href="../EPMPO/Project.html">View Projects</a>
+      <a href="../EPMPO/CreateEdit.html">Create/Edit</a>
+	</div>
+  <li>
+      <div class="dropdownAdmin">
+        <a class="dropbtn">Administration</button>
+        <div class="dropdown-contentAdmin">
+        <a href="../EPMPO/ManageAccounts.html">Manage Accounts</a>
+        <a href="../EPMPO/ManageDocuments.html">Manage Documents</a>
+        </div>
+      </div>
+      <li>
+      <div class="dropdownAdmin">
+        <a class="dropbtn">Management</button>
+        <div class="dropdown-contentAdmin">
+        <a href="../EPMPO/ProposedProjectM.html">Proposed Projects</a>
+        <a href="../EPMPO/SubmittedProjectM.html">Submitted Projects</a>
+        <a href="../EPMPO/ArchivedProject.html">Archived Projects</a>
+        </div>
+      </div>
+    </li>
+      <li><a href="../EPMPO/ContactUs.html">Contact Us</a></li>
+    </li>
+</ul>
+</center>
+
+
+<ul>
+  <li><a href="../EPMPO/ProposedProject.html">Proposed Projects</a></li>
+  <li><a href="../EPMPO/SubmittedProject.html">Submitted Projects</a></li>
+</ul>
+
+
+
+
+</body>
+</html>
