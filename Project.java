@@ -3,8 +3,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 
-public class Project implements DatabaseManager{
+public class Project{
 	
 	ArrayList<String> project = new ArrayList<String>();
 		
@@ -35,280 +36,6 @@ public class Project implements DatabaseManager{
 	String stateSystemRoad; 
 	String numberMiles;
 	String numberProjectedLanes;
-	
-	//Setters
-	public void setAirQualityAnalysisCO(String airQualityAnalysisCO)
-	{
-		this.airQualityAnalysisCO = airQualityAnalysisCO;
-	}
-	
-	public void setAirQualityAnalysisNOX(String airQualityAnalysisNOX)
-	{
-		this.airQualityAnalysisNOX = airQualityAnalysisNOX;
-	}
-	
-	public void setAirQualityAnalysisVOC(String airQualityAnalysisVOC)
-	{
-		this.airQualityAnalysisVOC = airQualityAnalysisVOC;
-	}
-	
-	public void setArea(String area)
-	{
-		this.area = area;
-	}
-	
-	public void setCapacityProject(String capacityProject)
-	{
-		this.capacityProject = capacityProject;
-	}
-	
-	public void setCity(String city)
-	{
-		this.city = city;
-	}
-	
-	public void setCounty(String county)
-	{
-		this.county = county;
-	}
-	
-	public void setDotDistrict(String dotDistrict)
-	{
-		this.dotDistrict = dotDistrict;
-	}
-	
-	public void setFederalFiscalYear(String federalFiscalYear)
-	{
-		this.federalFiscalYear = federalFiscalYear;
-	}
-	
-	public void setFederalFunctionalClassifications(String federalFunctionalClassifications)
-	{
-		this.federalFunctionalClassifications = federalFunctionalClassifications;
-	}
-	
-	public void setFundProjectType(String fundProjectType)
-	{
-		this.fundProjectType = fundProjectType;
-	}
-	
-	public void setHighwayRoadwayName(String highwayRoadwayName)
-	{
-		this.highwayRoadwayName = highwayRoadwayName;
-	}
-	
-	public void setLimitFrom(String limitFrom)
-	{
-		this.limitFrom = limitFrom;
-	}
-	
-	public void setLimitTo(String limitTo)
-	{
-		this.limitTo = limitTo;
-	}
-	
-	public void setNetWorkYear(String networkYear)
-	{
-		this.networkYear = networkYear;
-	}
-	
-	public void setNumberOfExistingLanes(String numberExistingLanes)
-	{
-		this.numberExistingLanes = numberExistingLanes;
-	}
-	
-	public void setProjectDescription(String projectDescription)
-	{
-		this.projectDescription = projectDescription;
-	}
-	
-	public void setProjectID(String projectID)
-	{
-		this.projectID = projectID;
-	}
-	
-	public void setProjectName(String projectName)
-	{
-		this.projectName = projectName;
-	}
-	
-	public void setProjectPhases(String projectPhases)
-	{
-		this.projectPhases = projectPhases;
-	}
-	
-	public void setProjectType(String projectType)
-	{
-		this.projectType = projectType;
-	}
-	
-	public void setRemarks(String remarks)
-	{
-		this.remarks = remarks;
-	}
-	
-	public void setScopeOfProduct(String scopeOfProduct)
-	{
-		this.scopeOfProduct = scopeOfProduct;
-	}
-	
-	public void setSponsorAgency(String sponsorAgency)
-	{
-		this.sponsorAgency = sponsorAgency;
-	}
-	
-	public void setStateSystemRoad(String stateSystemRoad)
-	{
-		this.stateSystemRoad = stateSystemRoad;
-	}
-	
-	public void setNumberMiles(String numberMiles)
-	{
-		this.numberMiles = numberMiles;
-	}
-	
-	public void setNumberProjectedLanes(String numberProjectedLanes)
-	{
-		this.numberProjectedLanes = numberProjectedLanes;
-	}
-	
-	
-	///////////////////////////////////////// Getters ///////////////////////////////////////////////////////////////////
-	public String getAirQualityAnalysisCO()
-	{
-		return airQualityAnalysisCO;
-	}
-	
-	public String getAirQualityAnalysisNOX()
-	{
-		return airQualityAnalysisNOX;
-	}
-	
-	public String getAirQualityAnalysisVOC()
-	{
-		return airQualityAnalysisVOC;
-	}
-	
-	public String getArea()
-	{
-		return area;
-	}
-	
-	public String getCapacityProject()
-	{
-		return capacityProject;
-	}
-	
-	public String getCity()
-	{
-		return city;
-	}
-	
-	public String getCounty()
-	{
-		return county;
-	}
-	
-	public String getDotDistrict()
-	{
-		return dotDistrict;
-	}
-	
-	public String getFederalFiscalYear()
-	{
-		return federalFiscalYear;
-	}
-	
-	public String getFederalFunctionalClassifications()
-	{
-		return federalFunctionalClassifications;
-	}
-	
-	public String getFundProjectType()
-	{
-		return fundProjectType;
-	}
-	
-	public String getHighwayRoadwayName()
-	{
-		return highwayRoadwayName;
-	}
-	
-	public String getLimitFrom()
-	{
-		return limitFrom;
-	}
-	
-	public String getLimitTo()
-	{
-		return limitTo;
-	}
-	
-	public String getNetWorkYear()
-	{
-		return networkYear;
-	}
-	
-	public String getNumberOfExistingLanes()
-	{
-		return numberExistingLanes;
-	}
-	
-	public String getProjectDescription()
-	{
-		return projectDescription;
-	}
-	
-	public String getProjectID()
-	{
-		return projectID;
-	}
-	
-	public String getProjectName()
-	{
-		return projectName;
-	}
-	
-	public String getProjectPhases()
-	{
-		return projectPhases;
-	}
-	
-	public String getProjectType()
-	{
-		return projectType;
-	}
-	
-	public String getRemarks()
-	{
-		return remarks;
-	}
-	
-	public String getScopeOfProduct()
-	{
-		return scopeOfProduct;
-	}
-	
-	public String getSponsorAgency()
-	{
-		return sponsorAgency;
-	}
-	
-	public String getStateSystemRoad()
-	{
-		return stateSystemRoad;
-	}
-	
-	public String getNumberMiles()
-	{
-		return numberMiles;
-	}
-	
-	public String getNumberProjectedLanes()
-	{
-		return numberProjectedLanes;
-	}
-	
 	
 	public ArrayList<String> createProject(String airQualityAnalysisCO,String airQualityAnalysisNOX,String airQualityAnalysisVOC,
 			String area, String capacityProject, String city, String county, String dotDistrict, String federalFiscalYear, 
@@ -457,24 +184,22 @@ public class Project implements DatabaseManager{
 		{
 			conn = connect.connectToDatabase();
 			stmt = conn.createStatement();
-			stmt.executeUpdate(sql);
+			int rs = stmt.executeUpdate(sql);
+			if (rs == 0)
+			{
+				success = false;
+				System.out.println("Project WAS NOT updated");
+				
+			}
 
+			else
+			{
+				success = true;
+				System.out.println("The project WAS updated SUCCESSFULLY");
+			}
 			
 		}catch(SQLException se){
 			se.printStackTrace();
-		}
-		
-		if (pID.equals(project.get(17)))
-		{
-			success = true;
-			System.out.println("The project WAS updated SUCCESSFULLY");
-			
-		}
-
-		else
-		{
-			success = false;
-			System.out.println("Project WAS NOT updated");
 		}
 		
 		return success;
@@ -494,96 +219,296 @@ public class Project implements DatabaseManager{
 		{
 			conn = connect.connectToDatabase();
 			stmt = conn.createStatement();
-			//ResultSet rs = stmt.executeQuery(sql);
-			stmt.executeUpdate(sql);
-			//int rows = stmt.executeUpdate(sql);
-			
-			/*while(rs.next())
+			int rs = stmt.executeUpdate(sql);
+			if (rs == 0)
 			{
-				pjID = rs.getString("ProjectID");
-			}*/
-			
-		}catch(SQLException se){
-			se.printStackTrace();
-		}
-		
-		if (pID.equals(project.get(17)))
-		{
-			deleteProject = true;
-			System.out.println("The project WAS deleted");
-			
-		}
+				deleteProject = false;
+				System.out.println("Project WAS NOT deleted");
+				
+			}
 
-		else
+			else
+			{
+				deleteProject = true;
+				System.out.println("The project WAS deleted");
+			}
+		}
+		catch(SQLException se)
 		{
-			deleteProject = false;
-			System.out.println("Project WAS NOT deleted");
+			se.printStackTrace();
 		}
 				
 		return deleteProject;
 	}
-		
-
-	@Override
-	public String createUserAccountQuery(String username, String password, String firstName, String lastName,
-			String dob, String accountType, String accountID, String creationDate, String requestDate,
-			String phoneNumber, String email, boolean isApproved) {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public void setAirQualityAnalysisCO(String airQualityAnalysisCO)
+	{
+		this.airQualityAnalysisCO = airQualityAnalysisCO;
 	}
-
-	@Override
-	public String editUserAccountQuery(String username, String field, String value) {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public void setAirQualityAnalysisNOX(String airQualityAnalysisNOX)
+	{
+		this.airQualityAnalysisNOX = airQualityAnalysisNOX;
 	}
-
-	@Override
-	public String deleteUserAccountQuery(String username) {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public void setAirQualityAnalysisVOC(String airQualityAnalysisVOC)
+	{
+		this.airQualityAnalysisVOC = airQualityAnalysisVOC;
 	}
-
-	@Override
-	public String retrieveUserAccountQuery(String username) {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public void setArea(String area)
+	{
+		this.area = area;
 	}
-
-	@Override
-	public String approveUserAccountQuery(String username, String value) {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public void setCapacityProject(String capacityProject)
+	{
+		this.capacityProject = capacityProject;
 	}
-
-	@Override
-	public String authenticateUserQuery(String username) {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public void setCity(String city)
+	{
+		this.city = city;
 	}
-
-	@Override
-	public String createProjectQuery(ArrayList<String> project) {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public void setCounty(String county)
+	{
+		this.county = county;
 	}
-
-	@Override
-	public String editProjectQuery(String field, String value, String pID) {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public void setDotDistrict(String dotDistrict)
+	{
+		this.dotDistrict = dotDistrict;
 	}
-
-	@Override
-	public String deleteProjectQuery(String pID) {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public void setFederalFiscalYear(String federalFiscalYear)
+	{
+		this.federalFiscalYear = federalFiscalYear;
 	}
-
-	@Override
-	public String retrieveProjectQuery(ArrayList<String> project, String pID) {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public void setFederalFunctionalClassifications(String federalFunctionalClassifications)
+	{
+		this.federalFunctionalClassifications = federalFunctionalClassifications;
+	}
+	
+	public void setFundProjectType(String fundProjectType)
+	{
+		this.fundProjectType = fundProjectType;
+	}
+	
+	public void setHighwayRoadwayName(String highwayRoadwayName)
+	{
+		this.highwayRoadwayName = highwayRoadwayName;
+	}
+	
+	public void setLimitFrom(String limitFrom)
+	{
+		this.limitFrom = limitFrom;
+	}
+	
+	public void setLimitTo(String limitTo)
+	{
+		this.limitTo = limitTo;
+	}
+	
+	public void setNetWorkYear(String networkYear)
+	{
+		this.networkYear = networkYear;
+	}
+	
+	public void setNumberOfExistingLanes(String numberExistingLanes)
+	{
+		this.numberExistingLanes = numberExistingLanes;
+	}
+	
+	public void setProjectDescription(String projectDescription)
+	{
+		this.projectDescription = projectDescription;
+	}
+	
+	public void setProjectID(String projectID)
+	{
+		this.projectID = projectID;
+	}
+	
+	public void setProjectName(String projectName)
+	{
+		this.projectName = projectName;
+	}
+	
+	public void setProjectPhases(String projectPhases)
+	{
+		this.projectPhases = projectPhases;
+	}
+	
+	public void setProjectType(String projectType)
+	{
+		this.projectType = projectType;
+	}
+	
+	public void setRemarks(String remarks)
+	{
+		this.remarks = remarks;
+	}
+	
+	public void setScopeOfProduct(String scopeOfProduct)
+	{
+		this.scopeOfProduct = scopeOfProduct;
+	}
+	
+	public void setSponsorAgency(String sponsorAgency)
+	{
+		this.sponsorAgency = sponsorAgency;
+	}
+	
+	public void setStateSystemRoad(String stateSystemRoad)
+	{
+		this.stateSystemRoad = stateSystemRoad;
+	}
+	
+	public void setNumberMiles(String numberMiles)
+	{
+		this.numberMiles = numberMiles;
+	}
+	
+	public void setNumberProjectedLanes(String numberProjectedLanes)
+	{
+		this.numberProjectedLanes = numberProjectedLanes;
+	}
+	
+	public String getAirQualityAnalysisCO()
+	{
+		return airQualityAnalysisCO;
+	}
+	
+	public String getAirQualityAnalysisNOX()
+	{
+		return airQualityAnalysisNOX;
+	}
+	
+	public String getAirQualityAnalysisVOC()
+	{
+		return airQualityAnalysisVOC;
+	}
+	
+	public String getArea()
+	{
+		return area;
+	}
+	
+	public String getCapacityProject()
+	{
+		return capacityProject;
+	}
+	
+	public String getCity()
+	{
+		return city;
+	}
+	
+	public String getCounty()
+	{
+		return county;
+	}
+	
+	public String getDotDistrict()
+	{
+		return dotDistrict;
+	}
+	
+	public String getFederalFiscalYear()
+	{
+		return federalFiscalYear;
+	}
+	
+	public String getFederalFunctionalClassifications()
+	{
+		return federalFunctionalClassifications;
+	}
+	
+	public String getFundProjectType()
+	{
+		return fundProjectType;
+	}
+	
+	public String getHighwayRoadwayName()
+	{
+		return highwayRoadwayName;
+	}
+	
+	public String getLimitFrom()
+	{
+		return limitFrom;
+	}
+	
+	public String getLimitTo()
+	{
+		return limitTo;
+	}
+	
+	public String getNetWorkYear()
+	{
+		return networkYear;
+	}
+	
+	public String getNumberOfExistingLanes()
+	{
+		return numberExistingLanes;
+	}
+	
+	public String getProjectDescription()
+	{
+		return projectDescription;
+	}
+	
+	public String getProjectID()
+	{
+		return projectID;
+	}
+	
+	public String getProjectName()
+	{
+		return projectName;
+	}
+	
+	public String getProjectPhases()
+	{
+		return projectPhases;
+	}
+	
+	public String getProjectType()
+	{
+		return projectType;
+	}
+	
+	public String getRemarks()
+	{
+		return remarks;
+	}
+	
+	public String getScopeOfProduct()
+	{
+		return scopeOfProduct;
+	}
+	
+	public String getSponsorAgency()
+	{
+		return sponsorAgency;
+	}
+	
+	public String getStateSystemRoad()
+	{
+		return stateSystemRoad;
+	}
+	
+	public String getNumberMiles()
+	{
+		return numberMiles;
+	}
+	
+	public String getNumberProjectedLanes()
+	{
+		return numberProjectedLanes;
 	}
 
 }
