@@ -1,7 +1,9 @@
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.LinkedHashMap;
 
 public class Administrator extends AuthenticatedUser 
 {
@@ -23,8 +25,7 @@ public class Administrator extends AuthenticatedUser
 		Connection conn = null; 
 		String uname = ""; /*Username retrieved from db*/
 		String query = db.authenticateUserQuery(username);
-		String sql = db.createUserAccountQuery(username, password, firstName, lastName, dob, 
-				accountType, accountID, creationDate, requestDate, phoneNumber, email, isApproved);
+		String sql;
 		try 
 		{
 			conn = connect.connectToDatabase();
@@ -42,10 +43,11 @@ public class Administrator extends AuthenticatedUser
 				createUserAccount = false;
 			}else
 			{
-				stmt.executeUpdate(sql);
-				createUserAccount = true;
 				AuthenticatedUser user = new AuthenticatedUser(username, password, firstName, lastName, dob, 
 						accountType, accountID, creationDate, requestDate, phoneNumber, email, isApproved);
+				 sql = db.createUserAccountQuery(user);
+				stmt.executeUpdate(sql);
+				createUserAccount = true;
 			}
 
 		}catch(SQLException se){
