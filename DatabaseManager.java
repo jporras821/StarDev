@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 
 public interface DatabaseManager 
 {
@@ -19,8 +20,7 @@ public interface DatabaseManager
 
 
 	/*Generate Create User Account Query*/
-	String createUserAccountQuery(String username, String password, String firstName, String lastName, String dob, String accountType, 
-			String accountID, String creationDate, String requestDate, String phoneNumber, String email, boolean isApproved);
+	String createUserAccountQuery(AuthenticatedUser user);
 
 	/*Generate Edit User Account Query*/
 	String editUserAccountQuery(String username, String field, String value);

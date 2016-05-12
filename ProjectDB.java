@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 
 public class ProjectDB implements DatabaseManager
 {
@@ -35,9 +36,7 @@ public class ProjectDB implements DatabaseManager
 	}
 
 	@Override
-	public String createUserAccountQuery(String username, String password, String firstName, String lastName,
-			String dob, String accountType, String accountID, String creationDate, String requestDate,
-			String phoneNumber, String email, boolean isApproved) {
+	public String createUserAccountQuery(AuthenticatedUser user) {
 		// TODO Auto-generated method stub
 		return null;
 	}

@@ -37,21 +37,28 @@ public class DBConnection {
 
 	public static void main(String[] args) 
 	{
-		Administrator user = new Administrator();
-		Project project = new Project();
-		//
-		ArrayList<String> newProject = new ArrayList<String>();
-		//user.createUserAccount("mporras", "mporras", "Mario", "Porras", "1996-2-5", "MPO Staff", "555", "2014-6-7", "2014-7-6", "5554321", "mporras@gmail.com", false);
-		
-		newProject = project.createProject("5","10","50","East","true","El Paso","El Paso","El Paso District","2015","Major Arterial",
-				"Highway/Roadway","Arterial 1","Pellicano Dr","1 mile south of Pellicano Dr","2016","2", 
-				"Project Sponsor paying for PE and/or ROW Costs, if any", "A426X-CAP","Arterial 1", "C", "Additional Lanes", 
-				"Amend to add into H13-16 TIP and H15-18 TIP in FY 2015 (simultaneous submittal",  
-				"w Cat3-VRF County EP part of 2013 EPC CMPO project from Horizon 2040 MTP Developer List", 
-				"County EP","ON_State System Road","2","3");
+		ProjectLead user = new ProjectLead();
+//		user.deleteProject("A426X-CAP");
+		user.editProject("City", "El Paso", "A426X-CAP");
+//		user.createProject("5","10","50","East","true","El Paso","El Paso","El Paso District","2015","Major Arterial",
+//				"Highway/Roadway","Arterial 1","Pellicano Dr","1 mile south of Pellicano Dr","2016","2", 
+//				"Project Sponsor paying for PE and/or ROW Costs, if any", "A426X-CAP","Arterial 1", "C", "Additional Lanes", 
+//				"Amend to add into H13-16 TIP and H15-18 TIP in FY 2015 (simultaneous submittal",  
+//				"w Cat3-VRF County EP part of 2013 EPC CMPO project from Horizon 2040 MTP Developer List", 
+//				"County EP","ON_State System Road","2","3");
+
+//		ArrayList<String> newProject = new ArrayList<String>();
+//		//user.createUserAccount("mporras", "mporras", "Mario", "Porras", "1996-2-5", "MPO Staff", "555", "2014-6-7", "2014-7-6", "5554321", "mporras@gmail.com", false);
+//		
+//		newProject = project.createProject("5","10","50","East","true","El Paso","El Paso","El Paso District","2015","Major Arterial",
+//				"Highway/Roadway","Arterial 1","Pellicano Dr","1 mile south of Pellicano Dr","2016","2", 
+//				"Project Sponsor paying for PE and/or ROW Costs, if any", "A426X-CAP","Arterial 1", "C", "Additional Lanes", 
+//				"Amend to add into H13-16 TIP and H15-18 TIP in FY 2015 (simultaneous submittal",  
+//				"w Cat3-VRF County EP part of 2013 EPC CMPO project from Horizon 2040 MTP Developer List", 
+//				"County EP","ON_State System Road","2","3");
 
 		//project.storeProject(newProject);
 		//project.editProject("ProjectName", "Bike Road", "123");
-		project.deleteProject("null"); //Working
+//		project.deleteProject(""); //Working
 	}
 }

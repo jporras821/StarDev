@@ -1,14 +1,20 @@
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 
 public class UserDB implements DatabaseManager
 {
 
 	/*Generate Create User Account Query*/
-	public String createUserAccountQuery(String username, String password, String firstName, String lastName, String dob, String accountType, 
-			String accountID, String creationDate, String requestDate, String phoneNumber, String email, boolean isApproved) 
+	public String createUserAccountQuery(AuthenticatedUser user) 
 	{
-		String query = "INSERT INTO USERS VALUES('"+ username + "','"+ password + "','" + firstName + "','" + lastName + "','" + dob + "','" + accountType + "','" +
-				accountID + "','" + creationDate+ "','" + requestDate + "','" + phoneNumber + "','" + email + "','"+ isApproved + "')";
+		AuthenticatedUser newUser = user;
+		String query = "INSERT INTO USERS VALUES('"+ newUser.getUsername() + "','"+ 
+	newUser.getPassword() + "','" + newUser.getFirstname() + "','" + 
+	newUser.getLastname() + "','" + newUser.getDob() + "','" + 
+	newUser.getAccountType() + "','" + newUser.getAccountID() + "','" + 
+	newUser.getCreationDate()+ "','" + newUser.getRequestDate() + "','" + 
+				newUser.getPhoneNumber() + "','" + newUser.getEmail() + "','"+ 
+				newUser.isApproved() + "')";
 		System.out.println(query);
 		return query;
 	}
