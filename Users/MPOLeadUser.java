@@ -1,3 +1,4 @@
+
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -5,16 +6,17 @@ import java.sql.Statement;
 public class MPOLeadUser extends AuthenticatedUser
 {
 
-
-
 	public MPOLeadUser()
 	{
 
 	}
 
 	/*Approve Project Submission*/
+	
 	/*Review Project Submission*/
+	
 	/*Archive Project*/
+	
 	/*Approve User Account Request*/
 	public boolean approveUserAccountRequest(String username, String value)
 	{
