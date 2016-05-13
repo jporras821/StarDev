@@ -13,7 +13,7 @@ public interface DatabaseManager
 	String deleteProjectQuery(String pID);
 	
 	/*Generate query to output Project Data*/
-	public String retrieveProjectQuery(ArrayList<String> project, String pID);
+	String retrieveProjectQuery(ArrayList<String> project, String pID);
 
 	/*Generate Create User Account Query*/
 	String createUserAccountQuery(AuthenticatedUser user);
@@ -32,7 +32,10 @@ public interface DatabaseManager
 	
 	/*Authenticate User Query*/
 	String authenticateUserQuery(String username);
-
+	
+	/*View Project*/
+	String viewProject(String pID);
+	
 	String createSubmittedProjectQuery(ArrayList<String> submittedProject);
 
 	String editSubmittedProjectQuery(String columnName, String newValue, String pID);
@@ -46,5 +49,7 @@ public interface DatabaseManager
 	String deleteProposedProjectQuery(String pID);
 
 	String retrieveProposedProjectQuery(String pID) ;
+
+	String reviewProjectSubmissionQuery(String pID);
 
 }

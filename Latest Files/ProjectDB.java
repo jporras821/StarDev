@@ -100,7 +100,7 @@ public class ProjectDB implements DatabaseManager
 	/*Delete Project Submission*/
 		public String deleteSubmittedProjectQuery(String pID) 
 		{
-			String query = "DELETE FROM SubmittedProject WHERE ProjectID = \""+pID+"\"";
+			String query = "DELETE FROM SubmittedProject WHERE ProjectID = '" + pID + "'";
 			System.out.println(query);
 			return query;
 		}
@@ -109,7 +109,7 @@ public class ProjectDB implements DatabaseManager
 	/*Assign Approved ID*/
 
 	/*Review Project Submission*/
-	public String retrieveSubmittedProjectQuery(String pID) 
+	public String reviewProjectSubmissionQuery(String pID) 
 	{
 		String query = "SELECT * FROM SubmittedProject WHERE ProjectID=\""+pID+"\"";
 		System.out.println(query);
@@ -146,6 +146,12 @@ public class ProjectDB implements DatabaseManager
 	public String retrieveProposedProjectQuery(String pID) 
 	{
 		String query = "SELECT * FROM ProposedProject WHERE ProjectID=\""+pID+"\"";
+		System.out.println(query);
+		return query;
+	}
+
+	public String viewProject(String pID) {
+		String query = "SELECT * FROM Project WHERE ProjectID=\""+pID+"\"";
 		System.out.println(query);
 		return query;
 	}

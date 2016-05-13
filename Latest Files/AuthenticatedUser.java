@@ -24,19 +24,8 @@ public class AuthenticatedUser extends RegularUser
 	
 	public AuthenticatedUser(String username, String password, String firstname, String lastname, String dob,
 			String accountType, String accountID, String creationDate, String requestDate, String phoneNumber,
-			String email, boolean isApproved) {
-//		authenticatedUserInfo.put("username", username);
-//		authenticatedUserInfo.put("password", password);
-//		authenticatedUserInfo.put("firstname", firstname);
-//		authenticatedUserInfo.put("lastname", lastname);
-//		authenticatedUserInfo.put("dob", dob);
-//		authenticatedUserInfo.put("accountType", accountType);
-//		authenticatedUserInfo.put("accountID", accountID);
-//		authenticatedUserInfo.put("creationDate", creationDate);
-//		authenticatedUserInfo.put("requestDate", requestDate);
-//		authenticatedUserInfo.put("phoneNumber", phoneNumber);
-//		authenticatedUserInfo.put("email", email);
-//		authenticatedUserInfo.put("isApproved", isApproved);
+			String email, boolean isApproved) 
+	{
 		this.username = username;
 		this.password = password;
 		this.firstname  = firstname;

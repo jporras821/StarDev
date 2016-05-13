@@ -123,5 +123,16 @@ public class UserDB implements DatabaseManager
 		return null;
 	}
 
+	public String viewProject(String pID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String reviewProjectSubmissionQuery(String pID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
 

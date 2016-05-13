@@ -13,59 +13,6 @@ public class SubmittedProject extends Project
 	String submissionStatus;
 	String projectID;
 	
-	public void setTPBApproval(String tpbApproval)
-	{
-		this.tpbApproval = tpbApproval;
-	}
-	
-	public void setFederalApproval(String federalApproval)
-	{
-		this.federalApproval = federalApproval;
-	}
-	
-	public void setStateApproval(String stateApproval)
-	{
-		this.stateApproval = stateApproval;
-	}
-	
-	public void setSubmissionStatus(String submissionStatus)
-	{
-		this.submissionStatus = submissionStatus;
-	}
-	
-	public void setProjectID(String projectID)
-	{
-		this.projectID = projectID;
-	}
-	
-	
-	
-	// Getters
-	public String getTPBApproval()
-	{
-		return tpbApproval;
-	}
-	
-	public String getFederalApproval()
-	{
-		return federalApproval;
-	}
-	
-	public String getStateApproval()
-	{
-		return stateApproval;
-	}
-	
-	public String getSubmissionStatus()
-	{
-		return submissionStatus;
-	}
-	
-	public String getProjectID()
-	{
-		return projectID;
-	}
-	
 	public ArrayList<String> createSubmittedProject(String tpbApproval,String federalApproval,String stateApproval,
 													String submissionStatus,String projectID)
 	{
@@ -74,7 +21,6 @@ public class SubmittedProject extends Project
 		setStateApproval(stateApproval);
 		setSubmissionStatus(submissionStatus);
 		setProjectID(projectID);
-		
 		String tpb = getTPBApproval();
 		String fa = getFederalApproval();
 		String sa = getStateApproval();
@@ -127,7 +73,8 @@ public class SubmittedProject extends Project
 		return storeProject;
 	}
 	
-	public boolean editSubmittedProject(String columnName, String newValue, String pID){
+	public boolean editSubmittedProject(String columnName, String newValue, String pID)
+	{
 		
 		DBConnection connect = new DBConnection();
 		DatabaseManager db = new ProjectDB();
@@ -161,7 +108,7 @@ public class SubmittedProject extends Project
 		return success;
 	}
 	
-	public boolean deleteProject(String pID)
+	public boolean deleteSubmittedProject(String pID)
 	{
 		DBConnection connect = new DBConnection();
 		DatabaseManager db = new ProjectDB();
@@ -194,5 +141,55 @@ public class SubmittedProject extends Project
 		}
 				
 		return deleteProject;
+	}
+	
+	public void setTPBApproval(String tpbApproval)
+	{
+		this.tpbApproval = tpbApproval;
+	}
+	
+	public void setFederalApproval(String federalApproval)
+	{
+		this.federalApproval = federalApproval;
+	}
+	
+	public void setStateApproval(String stateApproval)
+	{
+		this.stateApproval = stateApproval;
+	}
+	
+	public void setSubmissionStatus(String submissionStatus)
+	{
+		this.submissionStatus = submissionStatus;
+	}
+	
+	public void setProjectID(String projectID)
+	{
+		this.projectID = projectID;
+	}
+	
+	public String getTPBApproval()
+	{
+		return tpbApproval;
+	}
+	
+	public String getFederalApproval()
+	{
+		return federalApproval;
+	}
+	
+	public String getStateApproval()
+	{
+		return stateApproval;
+	}
+	
+	public String getSubmissionStatus()
+	{
+		return submissionStatus;
+	}
+	
+	public String getProjectID()
+	{
+		return projectID;
 	}
 }

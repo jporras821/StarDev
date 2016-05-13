@@ -37,9 +37,11 @@ public class DBConnection {
 
 	public static void main(String[] args) 
 	{
-		ProjectLead user = new ProjectLead();
+		MPOStaff user = new MPOStaff();
+		user.approveSubmittedProject("TPBApproval", "pending", "T609X");
+		
 //		user.deleteProject("A426X-CAP");
-		user.editProject("City", "El Paso", "A426X-CAP");
+//		user.editProject("City", "El Paso", "A426X-CAP");
 //		user.createProject("5","10","50","East","true","El Paso","El Paso","El Paso District","2015","Major Arterial",
 //				"Highway/Roadway","Arterial 1","Pellicano Dr","1 mile south of Pellicano Dr","2016","2", 
 //				"Project Sponsor paying for PE and/or ROW Costs, if any", "A426X-CAP","Arterial 1", "C", "Additional Lanes", 
